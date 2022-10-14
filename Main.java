@@ -26,7 +26,7 @@ class Main {
       } else if (input == 3) {
         System.out.println("Top 10 Forbes In-Demand Jobs!");
       } else if (input == 4) {
-        System.out.println("Current Students: ");
+        System.out.println("Current Students:");
         while (fileScanner.hasNextLine()) {
           String line = fileScanner.nextLine();
           System.out.println(line);
