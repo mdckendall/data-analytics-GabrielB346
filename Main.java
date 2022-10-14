@@ -10,12 +10,14 @@ class Main {
 		FileReader fr = new FileReader("names.txt");
 		Scanner fileScanner = new Scanner(fr);
     Scanner loop = new Scanner(System.in);
+    int input;
+    do{
 		System.out.println("Press 1 to learn about salary.");
     System.out.println("Press 2 to learn about the job.");
     System.out.println("Press 3 to learn about demand.");
     System.out.println("Press 4 to to view current students.");
     System.out.println("Press 5 to quit.");
-    int input = loop.nextInt();
+    input = loop.nextInt();
 
     if(input == 1){
      System.out.println("$98,345 average salary in South Florida!"); 
@@ -33,8 +35,8 @@ class Main {
         System.out.println(line);
       }
     }
-    do{
-      break;
-    }while(input == 5);
+    
+    
+    }while(input != 5);
     }
 	}
